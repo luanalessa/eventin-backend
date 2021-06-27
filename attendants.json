@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "adminI": 1,
+    "fullname": "Juliana Burzlaff",
+    "username": "juliana.att",
+    "password": "att1234",
+    "event": {
+      "id": 1,
+      "name": "Scrum Day"
+    }
+  },
+  {
+    "id": 2,
+    "adminI": 2,
+    "fullname": "Luana Lessa",
+    "username": "luana.att",
+    "password": "att5678",
+    "event": {
+      "id": 2,
+      "name": "Innovation Day"
+    }
+  }
+]

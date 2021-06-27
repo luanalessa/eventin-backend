@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "adminId": 1,
+    "name": "Scrum Day",
+    "date": "07/02/2021",
+    "time": "08:00",
+    "location": "New York",
+    "description": "Descrição do evento",
+    "image": "url da img"
+  },
+  {
+    "id": 2,
+    "adminId": 2,
+    "name": "Innovation Day",
+    "date": "07/09/2021",
+    "time": "10:00",
+    "location": "New York",
+    "description": "Descrição do evento",
+    "image": "url da img"
+  }
+]
