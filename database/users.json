@@ -35,5 +35,41 @@
     "username": "ciclano.attendant",
     "type": "attendant",
     "password": "$2b$10$9ujmkYLNq3tb3Z6hsrwfH.m.IPSFzzSa7uU8UgCxRncasBzjdrIfu"
+  },
+  {
+    "id": 7,
+    "fullname": "Usuario teste",
+    "username": "teste",
+    "type": "user",
+    "password": "$2b$10$xPzuOO8uyxxe47s9abfWJulZx71QPDOvX6c.xRF32yF2gAHSRzVma"
+  },
+  {
+    "id": 8,
+    "fullname": "Teste",
+    "username": "teste.test",
+    "type": "user",
+    "password": "$2b$10$kZUCCZlCYWNB7.ZkgGlOAeuY.687r4GHvfEmjcbPRER.O5ii0jNH."
+  },
+  {
+    "id": 9,
+    "fullname": "drhfd",
+    "username": "dfzfv",
+    "type": "user",
+    "password": "$2b$10$Pr72Dynqq0YEYld9uYZfiOjYOgCiowBCMlZLvp/d8vrLxcO1tufka"
+  },
+  {
+    "id": 10,
+    "fullname": "fgf",
+    "username": "fg",
+    "type": "user",
+    "password": "$2b$10$9z38t/IEeDPTenIOqm36qetckZcNUQGj7AhuFTtbZ4gR6Yb3KsUXu"
+  },
+  {
+    "id": 11,
+    "fullname": "agoravai",
+    "username": "agoravai",
+    "type": "user",
+    "adminId": 2,
+    "password": "$2b$10$2M9dGCT4DhwF/hfZ5.PMF.Qbgy17LsqW58P1zNm2.wcRQ0aZpYQSm"
   }
 ]
