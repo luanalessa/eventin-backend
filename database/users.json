@@ -71,5 +71,20 @@
     "type": "user",
     "adminId": 2,
     "password": "$2b$10$2M9dGCT4DhwF/hfZ5.PMF.Qbgy17LsqW58P1zNm2.wcRQ0aZpYQSm"
+  },
+  {
+    "id": 12,
+    "fullname": "hgfs",
+    "username": "atendante",
+    "type": "attendant",
+    "password": "$2b$10$aXVyZMaCGyFFoeCQOq41vudQlwxsftYlU3.qLIH1YQS1wbgZFHsQa"
+  },
+  {
+    "id": 13,
+    "fullname": "dsg",
+    "username": "dsgszdgb",
+    "type": "attendant",
+    "adminId": 2,
+    "password": "$2b$10$K0FwnVPwvP8fIXwvS.WA/.6hsugLSo4vE5B.Bigwduyt4bPC.2wTy"
   }
 ]

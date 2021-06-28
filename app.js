@@ -7,6 +7,7 @@ const { startDatabase, db } = require("./database");
 const checkAuthentication = require("./middlewares/checkAuthentication");
 const readUser = require("./functions/readUser.js");
 const createUser = require("./functions/createUser.js");
+const createAttendant = require("./functions/createAttendant.js");
 const login = require("./functions/login.js");
 const logout = require("./functions/logout.js");
 
@@ -19,6 +20,7 @@ app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
 
 app.get("/users", checkAuthentication, readUser);
 app.post("/users", createUser);
+app.post("/attendants", createAttendant);
 app.post("/login", login);
 app.post("/logout", checkAuthentication, logout);
 
