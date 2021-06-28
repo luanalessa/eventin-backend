@@ -10,6 +10,8 @@ const createUser = require("./functions/createUser.js");
 const createAttendant = require("./functions/createAttendant.js");
 const login = require("./functions/login.js");
 const logout = require("./functions/logout.js");
+const readEvents = require("./functions/readEvents")
+
 
 startDatabase();
 
@@ -23,5 +25,7 @@ app.post("/users", createUser);
 app.post("/attendants", createAttendant);
 app.post("/login", login);
 app.post("/logout", checkAuthentication, logout);
+
+app.get("/events", readEvents);
 
 app.listen(3333);
