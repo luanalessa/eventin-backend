@@ -3,8 +3,6 @@ const fs = require("fs");
 const db = {};
 
 const files = [
-  { filename: "./database/admins.json", key: "admins" },
-  { filename: "./database/attendants.json", key: "attendants" },
   { filename: "./database/events.json", key: "events" },
   { filename: "./database/users.json", key: "users" },
 ];
@@ -24,14 +22,6 @@ function readFile(filename, onSuccess) {
     const data = JSON.parse(result.toString());
     onSuccess(data);
   });
-}
-
-function updateAdminsDatabase(data, onSuccess) {
-  updateDatabase("admins", data, onSuccess);
-}
-
-function updateAttendantsDatabase(data, onSuccess) {
-  updateDatabase("attendants", data, onSuccess);
 }
 
 function updateEventsDatabase(data, onSuccess) {
@@ -61,8 +51,6 @@ function writeData(filename, data, newData, onSuccess) {
 module.exports = {
   db,
   startDatabase,
-  updateAdminsDatabase,
-  updateAttendantsDatabase,
   updateEventsDatabase,
   updateUsersDatabase,
 };

@@ -1,39 +1,25 @@
 [
   {
     "id": 1,
-    "adminI": 1,
     "fullname": "Juliana Burzlaff",
-    "username": "juliana",
-    "password": "1234"
+    "username": "juliana.admin",
+    "password": "1234",
+    "type": "admin"
   },
   {
     "id": 2,
-    "adminI": 2,
-    "fullname": "Luana Lessa",
-    "username": "luana",
-    "password": "5678"
+    "adminId": 1,
+    "fullname": "Juliana",
+    "username": "juliana.user",
+    "password": "1234",
+    "type": "user"
   },
   {
     "id": 3,
+    "adminId": 1,
     "fullname": "Juliana",
-    "username": "juju",
-    "password": "12345"
-  },
-  {
-    "id": 4,
-    "fullname": "Juliana 2",
-    "username": "juju2",
-    "password": "123456"
-  },
-  {
-    "id": 5,
-    "username": "juliana.test",
-    "password": "we3446"
-  },
-  {
-    "id": 6,
-    "fullname": "Ciclano",
-    "username": "ciclano.test",
-    "password": "34gdh"
+    "username": "juliana.attendant",
+    "password": "1234",
+    "type": "attendant"
   }
 ]
