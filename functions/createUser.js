@@ -1,10 +1,14 @@
+const bcrypt = require("bcrypt");
 const { db, updateUsersDatabase } = require("../database");
 
-function createUser(req, res) {
-  const { fullname, username, password } = req.body;
-  const user = { fullname, username, password };
+const salt = bcrypt.genSaltSync(10);
 
-  updateUsersDatabase(user, (newUser) => {
+function createUser(req, res) {
+  const { fullname, username, password, type } = req.body;
+  const cryptPassword = bcrypt.hashSync(password, salt);
+  const user = { fullname, username, type, password: cryptPassword };
+
+  updateUsersDatabase(user, ({ password, ...newUser }) => {
     res.send(newUser);
   });
 }

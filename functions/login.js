@@ -1,22 +1,29 @@
-function loginPost (req, res) => {
-  const username = req.body.username;
-  const password = req.body.password;
+const bcrypt = require("bcrypt");
+const { db } = require("../database");
 
-  // let user = Object.keys(users).filter(
-  //     (elem) => users[elem].username === username
-  // );
+function login(req, res) {
+  const { username, password } = req.body;
 
-  if (loginUsers[username]) {
-      console.log("entrou");
-      if (password == loginUsers[username]) {
-          const token = `${new Date().getTime()}:${username}`;
-          res.send("Login Sucessful");
-          res.cookie('token', token, { maxAge: 900000, httpOnly: true })
-          cookies[`${username}`] = token;
+  const { password: userPassword, ...user } = db.users.find(
+    (u) => u.username === username
+  );
+
+  if (user) {
+    bcrypt.compare(password, userPassword, (err, result) => {
+      if (result) {
+        const token = `${new Date().getTime()}:${username}`;
+
+        res.cookie("token", token, { maxAge: 900000, httpOnly: true });
+        res.send({ token, ...user });
       } else {
-          res.send("User or password incorrect");
+        res.status(400);
+        res.send({ message: "Password incorrect" });
       }
+    });
   } else {
-      res.send("User not found");
+    res.status(400);
+    res.send({ message: "User not found" });
   }
-};
+}
+
+module.exports = login;

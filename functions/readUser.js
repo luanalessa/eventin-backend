@@ -1,7 +1,9 @@
 const { db } = require("../database");
 
 function readUser(req, res) {
-  res.send(db.users);
+  const users = db.users.map(({ password, ...user }) => user);
+
+  res.send(users);
 }
 
 module.exports = readUser;

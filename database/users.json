@@ -1,25 +1,39 @@
 [
   {
     "id": 1,
-    "fullname": "Juliana Burzlaff",
-    "username": "juliana.admin",
-    "password": "1234",
-    "type": "admin"
+    "fullname": "Juliana",
+    "username": "juliana.burzlaff",
+    "password": "$2b$10$lp7WUwzgGoaUvdkuLdYy1emDVEykdOZzctRMMjE9ihJOZ.mkZYax."
   },
   {
     "id": 2,
-    "adminId": 1,
     "fullname": "Juliana",
-    "username": "juliana.user",
-    "password": "1234",
-    "type": "user"
+    "username": "ju.test",
+    "type": "admin",
+    "password": "$2b$10$FoMoyXI2iQVptklV9R7RdOF82vg8LIagT8AbJwejojslfcgBIpeuS"
   },
   {
     "id": 3,
-    "adminId": 1,
-    "fullname": "Juliana",
-    "username": "juliana.attendant",
-    "password": "1234",
-    "type": "attendant"
+    "username": "ju.test",
+    "password": "$2b$10$VtAVRC4xFo7u9Kz1.sWPw.bMOzrnOkfV1jqHmWjJAGspNeNhw4hUa"
+  },
+  {
+    "id": 4,
+    "username": "ju.test",
+    "password": "$2b$10$qu90gO5IzUDSTHrPB6LXBu7y5rLnEPglCrHL.t8.t0sFuthFfVyFu"
+  },
+  {
+    "id": 5,
+    "fullname": "Fulano",
+    "username": "fulano.user",
+    "type": "user",
+    "password": "$2b$10$cEZKpzPtTygbfHzAhqjpYOHQKUin7kInBG5TEwiWWTGeVPeQstJXW"
+  },
+  {
+    "id": 6,
+    "fullname": "Ciclano",
+    "username": "ciclano.attendant",
+    "type": "attendant",
+    "password": "$2b$10$9ujmkYLNq3tb3Z6hsrwfH.m.IPSFzzSa7uU8UgCxRncasBzjdrIfu"
   }
 ]
