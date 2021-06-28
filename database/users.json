@@ -86,5 +86,53 @@
     "type": "attendant",
     "adminId": 2,
     "password": "$2b$10$K0FwnVPwvP8fIXwvS.WA/.6hsugLSo4vE5B.Bigwduyt4bPC.2wTy"
+  },
+  {
+    "id": 14,
+    "fullname": "Juliana",
+    "username": "juliana.b",
+    "type": "user",
+    "adminId": 2,
+    "password": "$2b$10$1.nqVhSbVzJsvKFLqGN9GOMiQINH.fuCXQJW7/xJJRyNGMO6ODgeK"
+  },
+  {
+    "id": 15,
+    "fullname": "Fulano",
+    "username": "fulano",
+    "type": "user",
+    "adminId": 2,
+    "password": "$2b$10$4qLjzwiW3HI2c1bYyZtUze0p0LS2k1l2zZskt8lR0sM9xqYtIWYxa"
+  },
+  {
+    "id": 16,
+    "fullname": "alguem",
+    "username": "alguem",
+    "type": "user",
+    "adminId": 2,
+    "password": "$2b$10$YrWDbhLPY5Cv8SumDoxd1O2nUdvurT3Hw/OoJQFVLZ0u8AJEyyltS"
+  },
+  {
+    "id": 17,
+    "fullname": "ninguem",
+    "username": "dsnfkjnsd",
+    "type": "user",
+    "adminId": 2,
+    "password": "$2b$10$RSgyAQ.x9f3pstWNRqvrYu.GvFco2vnXI9Q0E.Cxmhw6jiZawsdyu"
+  },
+  {
+    "id": 18,
+    "fullname": "asgds",
+    "username": "dsgsdg",
+    "type": "user",
+    "adminId": 2,
+    "password": "$2b$10$8PKWpy/8UQ2nd.wjAh8SiOhN1mYXG88dz6b2YwceFXm3P.Ges8aE6"
+  },
+  {
+    "id": 19,
+    "fullname": "rewq",
+    "username": "346u",
+    "type": "user",
+    "adminId": 2,
+    "password": "$2b$10$9gW/E4ik/Qou6xzOO3SNY.cffqr4hTu5AtBWSrKV2BU2qvyIUgykS"
   }
 ]
