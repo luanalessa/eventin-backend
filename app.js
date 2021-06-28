@@ -22,6 +22,6 @@ app.get("/users", checkAuthentication, readUser);
 app.post("/users", createUser);
 app.post("/attendants", createAttendant);
 app.post("/login", login);
-app.post("/logout", checkAuthentication, logout);
+app.post("/logout", logout);
 
 app.listen(3333);
