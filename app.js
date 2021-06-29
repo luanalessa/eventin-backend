@@ -13,6 +13,7 @@ const login = require("./functions/login.js");
 const logout = require("./functions/logout.js");
 const readEvents = require("./functions/readEvents.js");
 const deleteEvent = require("./functions/deleteEvent.js");
+const submitEvent = require("./functions/submitEvent");
 
 startDatabase();
 
@@ -29,5 +30,6 @@ app.post("/logout", logout);
 app.post("/events", createEvent);
 app.get("/events", checkAuthentication, readEvents);
 app.delete("/events", checkAuthentication, deleteEvent);
+app.put(`/submit/:username&:eventId`, submitEvent);
 
 app.listen(3333);
