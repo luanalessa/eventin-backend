@@ -118,5 +118,21 @@
     "type": "user",
     "adminId": 2,
     "password": "$2b$10$.yT6wC5qgQS1MBaSI4w6N.ka6weYqqfWD7sTkVFWdhKBoImw7.YcC"
+  },
+  {
+    "id": 98,
+    "fullname": "Joseph Brwon",
+    "username": "joseph",
+    "type": "attendant",
+    "adminId": 2,
+    "password": "$2b$10$ehjBDxZXQ0GED03Ztv/j3Otb8VjUe3/0On7qOuSCB.M7144KxaqCC"
+  },
+  {
+    "id": 57,
+    "fullname": "John Smith",
+    "username": "John",
+    "type": "attendant",
+    "adminId": 2,
+    "password": "$2b$10$8wyIiNhYqD0Vlj5E1ewtCeREqELiJdiVbE62NMOQ8ZgoHb5dPi3au"
   }
 ]

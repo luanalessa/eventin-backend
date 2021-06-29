@@ -4,14 +4,13 @@ const { db, updateUsersDatabase } = require("../database");
 const salt = bcrypt.genSaltSync(10);
 
 function createAttendant(req, res) {
-  const { fullname, username, password, type, adminId, event } = req.body;
+  const { fullname, username, password, type, adminId } = req.body;
   const cryptPassword = bcrypt.hashSync(password, salt);
   const user = {
     fullname,
     username,
     type,
     adminId,
-    event,
     password: cryptPassword,
   };
 
