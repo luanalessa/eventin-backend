@@ -126,5 +126,33 @@
     "type": "attendant",
     "adminId": 2,
     "password": "$2b$10$8wyIiNhYqD0Vlj5E1ewtCeREqELiJdiVbE62NMOQ8ZgoHb5dPi3au"
+  },
+  {
+    "id": 89,
+    "fullname": "1",
+    "username": "1",
+    "type": "user",
+    "adminId": 2,
+    "password": "$2b$10$qpiJdh83jAnGLNbgGuUvWesEFGJRmS7QtxeY0DenjeZhq1A7NpLyS",
+    "events": [
+      "22",
+      "35"
+    ]
+  },
+  {
+    "id": 100,
+    "fullname": "12",
+    "username": "12",
+    "type": "user",
+    "adminId": 2,
+    "password": "$2b$10$Qu4lIeMuiqpVW0vS6DLyHermQ6N327fnwMFOWS0noXNGUGYalWWB2"
+  },
+  {
+    "id": 77,
+    "fullname": "aaaa",
+    "username": "a",
+    "type": "user",
+    "adminId": 2,
+    "password": "$2b$10$Qu4lIeMuiqpVW0vS6DLyHeYOPPJ0a23VHPRDn8lm/RrhEdGrG4gUW"
   }
 ]

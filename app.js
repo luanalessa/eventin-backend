@@ -30,7 +30,7 @@ app.post("/attendants", createAttendant);
 app.post("/login", login);
 app.post("/logout", logout);
 app.post("/events", createEvent);
-app.get("/events", checkAuthentication, readEvents);
+app.get("/events", readEvents);
 app.delete("/events", checkAuthentication, deleteEvent);
 app.put(`/submit/:username&:eventId`, submitEvent);
 
