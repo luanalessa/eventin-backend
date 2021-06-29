@@ -17,6 +17,7 @@ const deleteUser = require("./functions/deleteUser.js");
 const submitEvent = require("./functions/submitEvent");
 const createTicket = require("./functions/createTicket");
 const readTickets = require("./functions/readTickets.js");
+const delEvent = require("./functions/delEvent");
 
 startDatabase();
 
@@ -37,5 +38,6 @@ app.delete("/events", deleteEvent);
 app.put(`/submit/:username&:eventId`, submitEvent);
 app.post("/tickets", createTicket);
 app.get("/tickets", readTickets);
+app.put(`/del/:username&:eventId`, delEvent);
 
 app.listen(3333);

@@ -134,16 +134,7 @@
     "type": "user",
     "adminId": 2,
     "password": "$2b$10$qpiJdh83jAnGLNbgGuUvWesEFGJRmS7QtxeY0DenjeZhq1A7NpLyS",
-    "events": [
-      "22",
-      "35",
-      "1",
-      "2",
-      "3",
-      "4",
-      "4",
-      "4"
-    ]
+    "events": []
   },
   {
     "id": 100,
