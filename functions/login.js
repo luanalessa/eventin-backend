@@ -13,7 +13,7 @@ function login(req, res) {
       if (result) {
         const token = `${new Date().getTime()}:${username}`;
 
-        res.cookie("token", token, { maxAge: 900000, httpOnly: true });
+        res.cookie("token", token);
         res.send({ token, ...user });
       } else {
         res.status(400);

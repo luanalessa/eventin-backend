@@ -8,10 +8,11 @@ const checkAuthentication = require("./middlewares/checkAuthentication");
 const readUser = require("./functions/readUser.js");
 const createUser = require("./functions/createUser.js");
 const createAttendant = require("./functions/createAttendant.js");
+const createEvent = require("./functions/createEvent.js");
 const login = require("./functions/login.js");
 const logout = require("./functions/logout.js");
-const readEvents = require("./functions/readEvents")
-
+const readEvents = require("./functions/readEvents.js");
+const deleteEvent = require("./functions/deleteEvent.js");
 
 startDatabase();
 
@@ -25,7 +26,8 @@ app.post("/users", createUser);
 app.post("/attendants", createAttendant);
 app.post("/login", login);
 app.post("/logout", logout);
-
-app.get("/events", readEvents);
+app.post("/events", createEvent);
+app.get("/events", checkAuthentication, readEvents);
+app.delete("/events", checkAuthentication, deleteEvent);
 
 app.listen(3333);

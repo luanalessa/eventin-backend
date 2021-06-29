@@ -134,5 +134,13 @@
     "type": "user",
     "adminId": 2,
     "password": "$2b$10$9gW/E4ik/Qou6xzOO3SNY.cffqr4hTu5AtBWSrKV2BU2qvyIUgykS"
+  },
+  {
+    "id": 20,
+    "fullname": "Fulano",
+    "username": "fulano.atendente",
+    "type": "attendant",
+    "adminId": 2,
+    "password": "$2b$10$EJfMC/GTqJs9qP2js2ODZunyjlBvog.xatdqz67PfF4xtUjI9QRMe"
   }
 ]

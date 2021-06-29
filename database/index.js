@@ -28,18 +28,34 @@ function updateEventsDatabase(data, onSuccess) {
   updateDatabase("events", data, onSuccess);
 }
 
+function deleteFromEventsDatabase(id, onSuccess) {
+  deleteFromDabase("events", id, onSuccess);
+}
+
 function updateUsersDatabase(data, onSuccess) {
   updateDatabase("users", data, onSuccess);
 }
 
 function updateDatabase(key, data, onSuccess) {
   const { filename } = files.find((file) => file.key === key);
-  const id = db[key].length + 1;
+  const id = db[key].length + Math.floor(Math.random() * 100);
   const newData = { id, ...data };
 
   db[key].push(newData);
 
   writeData(filename, db[key], newData, onSuccess);
+}
+
+function deleteFromDabase(key, id, onSuccess) {
+  const { filename } = files.find((file) => file.key === key);
+  const idList = db[key].map((item) => item.id);
+  const index = idList.indexOf(id);
+
+  if (index >= 0) {
+    db[key].splice(index, 1);
+  }
+
+  writeData(filename, db[key], id, onSuccess);
 }
 
 function writeData(filename, data, newData, onSuccess) {
@@ -51,6 +67,7 @@ function writeData(filename, data, newData, onSuccess) {
 module.exports = {
   db,
   startDatabase,
+  deleteFromEventsDatabase,
   updateEventsDatabase,
   updateUsersDatabase,
 };
