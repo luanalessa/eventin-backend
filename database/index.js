@@ -42,7 +42,7 @@ function updateUsersDatabase(data, onSuccess) {
 
 function updateDatabase(key, data, onSuccess) {
   const { filename } = files.find((file) => file.key === key);
-  const id = db[key].length + Math.floor(Math.random() * 100);
+  const id = db[key].length + 1;
   const newData = { id, ...data };
 
   db[key].push(newData);
