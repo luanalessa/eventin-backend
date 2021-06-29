@@ -134,5 +134,19 @@
     "type": "user",
     "adminId": 2,
     "password": "$2b$10$9gW/E4ik/Qou6xzOO3SNY.cffqr4hTu5AtBWSrKV2BU2qvyIUgykS"
+  },
+  {
+    "id": 20,
+    "fullname": "Luana Lessa Sena",
+    "username": "lessa",
+    "type": "user",
+    "adminId": 1,
+    "events": [
+      "1",
+      "2",
+      "1",
+      "2"
+    ],
+    "password": "$2b$10$e/Rp2zPyyqvd44JxaAfS2ukIjFBrnVOcISL.vnJPlUPMU6etWL1Dm"
   }
 ]

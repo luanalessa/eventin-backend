@@ -1,0 +1,143 @@
+[
+  {
+    "id": 1,
+    "fullname": "Juliana",
+    "username": "juliana.burzlaff"
+  },
+  {
+    "id": 2,
+    "fullname": "Juliana",
+    "username": "ju.test",
+    "type": "admin"
+  },
+  {
+    "id": 3,
+    "username": "ju.test"
+  },
+  {
+    "id": 4,
+    "username": "ju.test"
+  },
+  {
+    "id": 5,
+    "fullname": "Fulano",
+    "username": "fulano.user",
+    "type": "user"
+  },
+  {
+    "id": 6,
+    "fullname": "Ciclano",
+    "username": "ciclano.attendant",
+    "type": "attendant"
+  },
+  {
+    "id": 7,
+    "fullname": "Usuario teste",
+    "username": "teste",
+    "type": "user"
+  },
+  {
+    "id": 8,
+    "fullname": "Teste",
+    "username": "teste.test",
+    "type": "user"
+  },
+  {
+    "id": 9,
+    "fullname": "drhfd",
+    "username": "dfzfv",
+    "type": "user"
+  },
+  {
+    "id": 10,
+    "fullname": "fgf",
+    "username": "fg",
+    "type": "user"
+  },
+  {
+    "id": 11,
+    "fullname": "agoravai",
+    "username": "agoravai",
+    "type": "user",
+    "adminId": 2
+  },
+  {
+    "id": 12,
+    "fullname": "hgfs",
+    "username": "atendante",
+    "type": "attendant"
+  },
+  {
+    "id": 13,
+    "fullname": "dsg",
+    "username": "dsgszdgb",
+    "type": "attendant",
+    "adminId": 2
+  },
+  {
+    "id": 14,
+    "fullname": "Juliana",
+    "username": "juliana.b",
+    "type": "user",
+    "adminId": 2
+  },
+  {
+    "id": 15,
+    "fullname": "Fulano",
+    "username": "fulano",
+    "type": "user",
+    "adminId": 2
+  },
+  {
+    "id": 16,
+    "fullname": "alguem",
+    "username": "alguem",
+    "type": "user",
+    "adminId": 2
+  },
+  {
+    "id": 17,
+    "fullname": "ninguem",
+    "username": "dsnfkjnsd",
+    "type": "user",
+    "adminId": 2
+  },
+  {
+    "id": 18,
+    "fullname": "asgds",
+    "username": "dsgsdg",
+    "type": "user",
+    "adminId": 2
+  },
+  {
+    "id": 19,
+    "fullname": "rewq",
+    "username": "346u",
+    "type": "user",
+    "adminId": 2
+  },
+  {
+    "id": 20,
+    "fullname": "AAA",
+    "username": "a",
+    "type": "user",
+    "adminId": 1
+  },
+  {
+    "id": 21,
+    "fullname": "1",
+    "username": "11",
+    "type": "user",
+    "adminId": 1
+  },
+  {
+    "id": 22,
+    "fullname": "Luana Lessa Sena",
+    "username": "lessa",
+    "type": "user",
+    "adminId": 1,
+    "events": [
+      "2"
+    ]
+  }
+]
