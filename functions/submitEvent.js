@@ -6,7 +6,7 @@ function submitEvent(req, res) {
   const users = db.users.map(({ ...user }) => user);
 
   const indexUser = users.findIndex(user => username === user.username)
-
+  console.log(eventId)
   if(users[indexUser].events == undefined) {
     users[indexUser].events = [eventId]
   }else{
