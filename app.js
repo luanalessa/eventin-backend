@@ -13,6 +13,7 @@ const login = require("./functions/login.js");
 const logout = require("./functions/logout.js");
 const readEvents = require("./functions/readEvents.js");
 const deleteEvent = require("./functions/deleteEvent.js");
+const deleteUser = require("./functions/deleteUser.js");
 const submitEvent = require("./functions/submitEvent");
 
 startDatabase();
@@ -24,6 +25,7 @@ app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
 
 app.get("/users", checkAuthentication, readUser);
 app.post("/users", createUser);
+app.delete("/users", checkAuthentication, deleteUser);
 app.post("/attendants", createAttendant);
 app.post("/login", login);
 app.post("/logout", logout);

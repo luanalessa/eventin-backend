@@ -29,7 +29,11 @@ function updateEventsDatabase(data, onSuccess) {
 }
 
 function deleteFromEventsDatabase(id, onSuccess) {
-  deleteFromDabase("events", id, onSuccess);
+  deleteFromDatabase("events", id, onSuccess);
+}
+
+function deleteFromUsersDatabase(id, onSuccess) {
+  deleteFromDatabase("users", id, onSuccess);
 }
 
 function updateUsersDatabase(data, onSuccess) {
@@ -46,7 +50,7 @@ function updateDatabase(key, data, onSuccess) {
   writeData(filename, db[key], newData, onSuccess);
 }
 
-function deleteFromDabase(key, id, onSuccess) {
+function deleteFromDatabase(key, id, onSuccess) {
   const { filename } = files.find((file) => file.key === key);
   const idList = db[key].map((item) => item.id);
   const index = idList.indexOf(id);
