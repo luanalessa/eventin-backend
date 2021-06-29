@@ -72,6 +72,7 @@ module.exports = {
   db,
   startDatabase,
   deleteFromEventsDatabase,
+  deleteFromUsersDatabase,
   updateEventsDatabase,
   updateUsersDatabase,
 };

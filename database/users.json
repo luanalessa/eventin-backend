@@ -65,14 +65,6 @@
     "password": "$2b$10$9z38t/IEeDPTenIOqm36qetckZcNUQGj7AhuFTtbZ4gR6Yb3KsUXu"
   },
   {
-    "id": 11,
-    "fullname": "agoravai",
-    "username": "agoravai",
-    "type": "user",
-    "adminId": 2,
-    "password": "$2b$10$2M9dGCT4DhwF/hfZ5.PMF.Qbgy17LsqW58P1zNm2.wcRQ0aZpYQSm"
-  },
-  {
     "id": 12,
     "fullname": "hgfs",
     "username": "atendante",
@@ -110,30 +102,6 @@
     "type": "user",
     "adminId": 2,
     "password": "$2b$10$YrWDbhLPY5Cv8SumDoxd1O2nUdvurT3Hw/OoJQFVLZ0u8AJEyyltS"
-  },
-  {
-    "id": 17,
-    "fullname": "ninguem",
-    "username": "dsnfkjnsd",
-    "type": "user",
-    "adminId": 2,
-    "password": "$2b$10$RSgyAQ.x9f3pstWNRqvrYu.GvFco2vnXI9Q0E.Cxmhw6jiZawsdyu"
-  },
-  {
-    "id": 18,
-    "fullname": "asgds",
-    "username": "dsgsdg",
-    "type": "user",
-    "adminId": 2,
-    "password": "$2b$10$8PKWpy/8UQ2nd.wjAh8SiOhN1mYXG88dz6b2YwceFXm3P.Ges8aE6"
-  },
-  {
-    "id": 19,
-    "fullname": "rewq",
-    "username": "346u",
-    "type": "user",
-    "adminId": 2,
-    "password": "$2b$10$9gW/E4ik/Qou6xzOO3SNY.cffqr4hTu5AtBWSrKV2BU2qvyIUgykS"
   },
   {
     "id": 20,
