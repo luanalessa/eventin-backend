@@ -23,15 +23,15 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
 
-app.get("/users", checkAuthentication, readUser);
+app.get("/users", readUser);
 app.post("/users", createUser);
-app.delete("/users", checkAuthentication, deleteUser);
+app.delete("/users", deleteUser);
 app.post("/attendants", createAttendant);
 app.post("/login", login);
 app.post("/logout", logout);
 app.post("/events", createEvent);
 app.get("/events", readEvents);
-app.delete("/events", checkAuthentication, deleteEvent);
+app.delete("/events", deleteEvent);
 app.put(`/submit/:username&:eventId`, submitEvent);
 
 app.listen(3333);
