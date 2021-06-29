@@ -5,6 +5,7 @@ const db = {};
 const files = [
   { filename: "./database/events.json", key: "events" },
   { filename: "./database/users.json", key: "users" },
+  { filename: "./database/tickets.json", key: "tickets" },
 ];
 
 function startDatabase() {
@@ -26,6 +27,10 @@ function readFile(filename, onSuccess) {
 
 function updateEventsDatabase(data, onSuccess) {
   updateDatabase("events", data, onSuccess);
+}
+
+function updateTicketsDatabase(data, onSuccess) {
+  updateDatabase("tickets", data, onSuccess);
 }
 
 function deleteFromEventsDatabase(id, onSuccess) {
@@ -75,4 +80,5 @@ module.exports = {
   deleteFromUsersDatabase,
   updateEventsDatabase,
   updateUsersDatabase,
+  updateTicketsDatabase,
 };

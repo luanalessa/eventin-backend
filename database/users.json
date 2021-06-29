@@ -136,7 +136,13 @@
     "password": "$2b$10$qpiJdh83jAnGLNbgGuUvWesEFGJRmS7QtxeY0DenjeZhq1A7NpLyS",
     "events": [
       "22",
-      "35"
+      "35",
+      "1",
+      "2",
+      "3",
+      "4",
+      "4",
+      "4"
     ]
   },
   {
@@ -154,5 +160,13 @@
     "type": "user",
     "adminId": 2,
     "password": "$2b$10$Qu4lIeMuiqpVW0vS6DLyHeYOPPJ0a23VHPRDn8lm/RrhEdGrG4gUW"
+  },
+  {
+    "id": 22,
+    "fullname": "Juliana",
+    "username": "ju.attendant",
+    "type": "attendant",
+    "adminId": 2,
+    "password": "$2b$10$uHrvhznuEsbM7ZQ7UDQkVe0U7U9flnoGx1nZhaaLpQD5W7SpbJwjS"
   }
 ]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "token": "euhauehaieahasjhaskj",
+    "userId": 1,
+    "eventId": 3,
+    "validated": true
+  },
+  {
+    "id": 2,
+    "token": "1624966707142",
+    "userId": 89,
+    "eventId": 4,
+    "validated": false
+  }
+]
