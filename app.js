@@ -41,7 +41,7 @@ app.post("/login", login);
 app.post("/logout", logout);
 app.post("/events", createEvent);
 app.get("/events", readEvents);
-app.get("/events/:id", readUserEvents);
+app.get(`/events/:id&:eventsId` , readUserEvents);
 app.delete("/events", deleteEvent);
 app.put(`/submit/:username&:eventId`, submitEvent);
 app.post("/tickets", createTicket);
