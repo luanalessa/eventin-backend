@@ -72,44 +72,12 @@
     "password": "$2b$10$aXVyZMaCGyFFoeCQOq41vudQlwxsftYlU3.qLIH1YQS1wbgZFHsQa"
   },
   {
-    "id": 14,
-    "fullname": "Juliana",
-    "username": "juliana.b",
-    "type": "user",
-    "adminId": 2,
-    "password": "$2b$10$1.nqVhSbVzJsvKFLqGN9GOMiQINH.fuCXQJW7/xJJRyNGMO6ODgeK"
-  },
-  {
-    "id": 15,
-    "fullname": "Fulano",
-    "username": "fulano",
-    "type": "user",
-    "adminId": 2,
-    "password": "$2b$10$4qLjzwiW3HI2c1bYyZtUze0p0LS2k1l2zZskt8lR0sM9xqYtIWYxa"
-  },
-  {
-    "id": 16,
-    "fullname": "alguem",
-    "username": "alguem",
-    "type": "user",
-    "adminId": 2,
-    "password": "$2b$10$YrWDbhLPY5Cv8SumDoxd1O2nUdvurT3Hw/OoJQFVLZ0u8AJEyyltS"
-  },
-  {
     "id": 20,
     "fullname": "Fulano",
     "username": "fulano.atendente",
     "type": "attendant",
     "adminId": 2,
     "password": "$2b$10$EJfMC/GTqJs9qP2js2ODZunyjlBvog.xatdqz67PfF4xtUjI9QRMe"
-  },
-  {
-    "id": 58,
-    "fullname": "User Test",
-    "username": "user.test",
-    "type": "user",
-    "adminId": 2,
-    "password": "$2b$10$.yT6wC5qgQS1MBaSI4w6N.ka6weYqqfWD7sTkVFWdhKBoImw7.YcC"
   },
   {
     "id": 98,
@@ -128,43 +96,35 @@
     "password": "$2b$10$8wyIiNhYqD0Vlj5E1ewtCeREqELiJdiVbE62NMOQ8ZgoHb5dPi3au"
   },
   {
-    "id": 89,
-    "fullname": "1",
-    "username": "1",
-    "type": "user",
-    "adminId": 2,
-    "password": "$2b$10$qpiJdh83jAnGLNbgGuUvWesEFGJRmS7QtxeY0DenjeZhq1A7NpLyS",
-    "events": [
-      "2",
-      "1",
-      "1",
-      "1",
-      "1",
-      "1"
-    ]
-  },
-  {
-    "id": 100,
-    "fullname": "12",
-    "username": "12",
-    "type": "user",
-    "adminId": 2,
-    "password": "$2b$10$Qu4lIeMuiqpVW0vS6DLyHermQ6N327fnwMFOWS0noXNGUGYalWWB2"
-  },
-  {
-    "id": 77,
-    "fullname": "aaaa",
-    "username": "a",
-    "type": "user",
-    "adminId": 2,
-    "password": "$2b$10$Qu4lIeMuiqpVW0vS6DLyHeYOPPJ0a23VHPRDn8lm/RrhEdGrG4gUW"
-  },
-  {
     "id": 22,
     "fullname": "Juliana",
     "username": "ju.attendant",
     "type": "attendant",
     "adminId": 2,
     "password": "$2b$10$uHrvhznuEsbM7ZQ7UDQkVe0U7U9flnoGx1nZhaaLpQD5W7SpbJwjS"
+  },
+  {
+    "id": 23,
+    "fullname": "Juliana",
+    "username": "ju.admin",
+    "type": "admin",
+    "password": "$2b$10$uHrvhznuEsbM7ZQ7UDQkVe0U7U9flnoGx1nZhaaLpQD5W7SpbJwjS"
+  },
+  {
+    "id": 17,
+    "fullname": "Usuario Teste",
+    "username": "user.test",
+    "type": "user",
+    "adminId": 23,
+    "password": "$2b$10$RVDWNk5klF.uSFTevq7oDea31u1ca11rYcALymAK4QpEyx13to6cG",
+    "events": []
+  },
+  {
+    "id": 18,
+    "fullname": "Atendente Testq",
+    "username": "attendant.test",
+    "type": "attendant",
+    "adminId": 23,
+    "password": "$2b$10$pNZGhvZl47Q7Ch1XnEbMqO35yK3ijZTCeZXTK3QuyhRcyIWKd4uUq"
   }
 ]

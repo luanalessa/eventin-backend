@@ -20,6 +20,7 @@ const createTicket = require("./functions/createTicket");
 const readTickets = require("./functions/readTickets.js");
 const readTicket = require("./functions/readTicket.js");
 const delEvent = require("./functions/delEvent");
+const updateTicket = require("./functions/updateTicket.js");
 
 startDatabase();
 
@@ -48,5 +49,6 @@ app.post("/tickets", createTicket);
 app.get("/tickets", readTickets);
 app.get("/ticket", readTicket);
 app.put(`/del/:username&:eventId`, delEvent);
+app.put("/ticket", updateTicket);
 
 app.listen(3333);

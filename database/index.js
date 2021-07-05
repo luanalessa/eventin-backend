@@ -45,6 +45,10 @@ function updateUsersDatabase(data, onSuccess) {
   updateDatabase("users", data, onSuccess);
 }
 
+function updateFromTicketsDatabase(token, onSuccess) {
+  updateTicketStatus("tickets", token, onSuccess);
+}
+
 function updateDatabase(key, data, onSuccess) {
   const { filename } = files.find((file) => file.key === key);
   const id = db[key].length + 1;
@@ -67,6 +71,16 @@ function deleteFromDatabase(key, id, onSuccess) {
   writeData(filename, db[key], id, onSuccess);
 }
 
+function updateTicketStatus(key, token, onSuccess) {
+  const { filename } = files.find((file) => file.key === key);
+  const tokenList = db[key].map((item) => item.token);
+  const index = tokenList.indexOf(token);
+
+  db[key][index].validated = true;
+
+  writeData(filename, db[key], token, onSuccess);
+}
+
 function writeData(filename, data, newData, onSuccess) {
   fs.writeFile(filename, JSON.stringify(data, null, 2), function (err, result) {
     onSuccess(newData);
@@ -81,4 +95,5 @@ module.exports = {
   updateEventsDatabase,
   updateUsersDatabase,
   updateTicketsDatabase,
+  updateFromTicketsDatabase,
 };

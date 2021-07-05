@@ -33,5 +33,12 @@
     "userId": 89,
     "eventId": 5,
     "validated": false
+  },
+  {
+    "id": 6,
+    "token": "1625056837556",
+    "userId": 17,
+    "eventId": 9,
+    "validated": true
   }
 ]
