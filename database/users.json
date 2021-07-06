@@ -94,8 +94,6 @@
     "type": "user",
     "adminId": 2,
     "password": "$2b$10$HGgIBbY02MilrCu5OCS9MOhkKqJUAZ/yUi/FpUl7IUX6JJtivT7gS",
-    "events": [
-      "1"
-    ]
+    "events": []
   }
 ]

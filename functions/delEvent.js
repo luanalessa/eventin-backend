@@ -5,12 +5,11 @@ function delEvent(req, res) {
   const { username, eventId } = req.params;
   const users = db.users.map(({ ...user }) => user);
 
-  console.log(username,eventId)
+  console.log(username, eventId);
   const indexUser = users.findIndex((user) => username === user.username);
 
   const copyEvents = users[indexUser].events;
-  copyEvents.splice(copyEvents.indexOf(eventId),1);
-  console.log("aaaaa",copyEvents)
+  copyEvents.splice(copyEvents.indexOf(eventId), 1);
   users[indexUser].events = copyEvents;
 
   fs.writeFileSync(

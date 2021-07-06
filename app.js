@@ -34,21 +34,21 @@ app.use(
   })
 );
 
-app.get("/users", readUser);
-app.post("/users", createUser);
-app.delete("/users", deleteUser);
-app.post("/attendants", createAttendant);
+app.get("/users", readUser); //user e admin
+app.post("/users", createUser); //admin
+app.delete("/users", deleteUser); //admin
+app.post("/attendants", createAttendant); //admin
 app.post("/login", login);
 app.post("/logout", logout);
-app.post("/events", createEvent);
-app.get("/events", readEvents);
-app.get(`/events/:id&:eventsId` , readUserEvents);
-app.delete("/events", deleteEvent);
-app.put(`/submit/:username&:eventId`, submitEvent);
-app.post("/tickets", createTicket);
-app.get("/tickets", readTickets);
-app.get("/ticket", readTicket);
+app.post("/events", createEvent); //admin
+app.get("/events", readEvents); //user e admin
+app.get(`/events/:id&:eventsId`, readUserEvents); //user e admin
+app.delete("/events", deleteEvent); //admin
+app.put(`/submit/:username&:eventId`, submitEvent); //user
+app.post("/tickets", createTicket); //user
+app.get("/tickets", readTickets); //user
+app.get("/ticket", readTicket); //attendant
 app.put(`/del/:username&:eventId`, delEvent);
-app.put("/ticket", updateTicket);
+app.put("/ticket", updateTicket); //attendant
 
 app.listen(3333);
