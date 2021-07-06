@@ -10,6 +10,7 @@ function submitEvent(req, res) {
   if(users[indexUser].events == undefined) {
     users[indexUser].events = [eventId]
   }else{
+    console.log("ok")
     const copyEvents = users[indexUser].events
     copyEvents.push(eventId)
 		users[indexUser].events = copyEvents

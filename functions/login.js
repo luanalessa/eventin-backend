@@ -1,5 +1,6 @@
 const bcrypt = require("bcrypt");
 const { db } = require("../database");
+const crypto = require("crypto");
 
 function login(req, res) {
   const { username, password } = req.body;
@@ -11,8 +12,9 @@ function login(req, res) {
   if (user) {
     bcrypt.compare(password, userPassword, (err, result) => {
       if (result) {
-        const token = `${new Date().getTime()}:${username}`;
-
+        const tokenId = `${new Date().getTime()}:${username}`;
+        const token = crypto.createHash("sha256").update(tokenId).digest("hex");
+        
         res.cookie("token", token);
         res.send({ token, ...user });
       } else {

@@ -100,7 +100,6 @@
     "fullname": "Juliana",
     "username": "ju.attendant",
     "type": "attendant",
-
     "password": "$2b$10$qpiJdh83jAnGLNbgGuUvWesEFGJRmS7QtxeY0DenjeZhq1A7NpLyS"
   },
   {
@@ -134,5 +133,23 @@
     "type": "attendant",
     "adminId": 23,
     "password": "$2b$10$pNZGhvZl47Q7Ch1XnEbMqO35yK3ijZTCeZXTK3QuyhRcyIWKd4uUq"
+  },
+  {
+    "id": 20,
+    "fullname": "Luana Lessa",
+    "username": "1",
+    "type": "user",
+    "adminId": 2,
+    "password": "$2b$10$I6HYgGwLxdzKh75paCvwPuhbqHTHpTZo10SSj5giLirAw43qEv1tK",
+    "events": []
+  },
+  {
+    "id": 21,
+    "fullname": "Luana Lessa Sena",
+    "username": "lessa",
+    "type": "user",
+    "adminId": 2,
+    "password": "$2b$10$zMTq5PEeR1OAdIGWI0IMSehzbwyuO0E0oYdZDuWNRYr5P0lGp1J.e",
+    "events": []
   }
 ]
