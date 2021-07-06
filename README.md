@@ -5,7 +5,7 @@ In this project you need to install [Node.js](https://nodejs.org/en/download/) a
 Then, clone the repository with:
 
 ```
-git clone https://github.com/luanalessa/alphapet-edtech.git
+git clone https://github.com/luanalessa/eventin-server.git
 ```
 
 So, in the project directory, you can run:
