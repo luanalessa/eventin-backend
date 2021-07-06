@@ -52,7 +52,7 @@ app.put(`/submit/:username&:eventId`, checkAuthUser, submitEvent); //user
 app.post("/tickets", checkAuthUser, createTicket); //user
 app.get("/tickets", checkAuthUser, readTickets); //user
 app.get("/ticket", checkAuthAttendant, readTicket); //attendant
-app.put(`/del/:username&:eventId`, delEvent);
+app.put(`/del/:username&:eventId`, checkAuthUser, delEvent); //user
 app.put("/ticket", checkAuthAttendant, updateTicket); //attendant
 
 app.listen(3333);
