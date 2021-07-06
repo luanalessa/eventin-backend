@@ -1,6 +1,6 @@
 # 🏁 Getting Started 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), so you need to install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) first, in order to test the project.
+In this project you need to install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) first, in order to test the project.
 
 Then, clone the repository with:
 
