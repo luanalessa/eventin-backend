@@ -7,14 +7,6 @@
     "password": "$2b$10$FoMoyXI2iQVptklV9R7RdOF82vg8LIagT8AbJwejojslfcgBIpeuS"
   },
   {
-    "id": 20,
-    "fullname": "Fulano",
-    "username": "fulano.atendente",
-    "type": "attendant",
-    "adminId": 2,
-    "password": "$2b$10$EJfMC/GTqJs9qP2js2ODZunyjlBvog.xatdqz67PfF4xtUjI9QRMe"
-  },
-  {
     "id": 98,
     "fullname": "Joseph Brwon",
     "username": "joseph",
@@ -36,14 +28,6 @@
     "username": "ju.attendant",
     "type": "attendant",
     "password": "$2b$10$qpiJdh83jAnGLNbgGuUvWesEFGJRmS7QtxeY0DenjeZhq1A7NpLyS"
-  },
-  {
-    "id": 100,
-    "fullname": "12",
-    "username": "12",
-    "type": "user",
-    "adminId": 2,
-    "password": "$2b$10$uHrvhznuEsbM7ZQ7UDQkVe0U7U9flnoGx1nZhaaLpQD5W7SpbJwjS"
   },
   {
     "id": 23,
@@ -88,12 +72,23 @@
     "events": []
   },
   {
-    "id": 12,
-    "fullname": "Usuario Teste",
+    "id": 10,
+    "fullname": "user",
     "username": "user",
     "type": "user",
     "adminId": 2,
-    "password": "$2b$10$HGgIBbY02MilrCu5OCS9MOhkKqJUAZ/yUi/FpUl7IUX6JJtivT7gS",
-    "events": []
+    "password": "$2b$10$8b1iUmr80BgzLxW.HAl9bubcc.ZF1ECOBwt3/DZO8ImmkGVh6pd7e",
+    "events": [
+      "3",
+      "1"
+    ]
+  },
+  {
+    "id": 11,
+    "fullname": "Attendant",
+    "username": "attendant",
+    "type": "attendant",
+    "adminId": 2,
+    "password": "$2b$10$1P17ODK2XBr2nwnAfNDhk.QqtRyYwMrUYLTIBxNGfnd/vDYNkStN."
   }
 ]

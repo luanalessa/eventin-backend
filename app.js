@@ -5,6 +5,10 @@ const cors = require("cors");
 const app = express();
 const { startDatabase, db } = require("./database");
 const checkAuthentication = require("./middlewares/checkAuthentication");
+const checkAuthAdmin = require("./middlewares/checkAuthAdmin");
+const checkAuthAdminUser = require("./middlewares/checkAuthAdminUser");
+const checkAuthUser = require("./middlewares/checkAuthUser");
+const checkAuthAttendant = require("./middlewares/checkAuthAttendant");
 const readUser = require("./functions/readUser.js");
 const createUser = require("./functions/createUser.js");
 const createAttendant = require("./functions/createAttendant.js");
@@ -34,21 +38,21 @@ app.use(
   })
 );
 
-app.get("/users", readUser); //user e admin
-app.post("/users", createUser); //admin
-app.delete("/users", deleteUser); //admin
+app.get("/users", checkAuthAdminUser, readUser); //user e admin
+app.post("/users", checkAuthAdmin, createUser); //admin
+app.delete("/users", checkAuthAdmin, deleteUser); //admin
 app.post("/attendants", createAttendant); //admin
 app.post("/login", login);
 app.post("/logout", logout);
-app.post("/events", createEvent); //admin
-app.get("/events", readEvents); //user e admin
-app.get(`/events/:id&:eventsId`, readUserEvents); //user e admin
-app.delete("/events", deleteEvent); //admin
-app.put(`/submit/:username&:eventId`, submitEvent); //user
-app.post("/tickets", createTicket); //user
-app.get("/tickets", readTickets); //user
-app.get("/ticket", readTicket); //attendant
+app.post("/events", checkAuthAdmin, createEvent); //admin
+app.get("/events", checkAuthAdminUser, readEvents); //user e admin
+app.get(`/events/:id&:eventsId`, checkAuthAdminUser, readUserEvents); //user e admin
+app.delete("/events", checkAuthAdmin, deleteEvent); //admin
+app.put(`/submit/:username&:eventId`, checkAuthUser, submitEvent); //user
+app.post("/tickets", checkAuthUser, createTicket); //user
+app.get("/tickets", checkAuthUser, readTickets); //user
+app.get("/ticket", checkAuthAttendant, readTicket); //attendant
 app.put(`/del/:username&:eventId`, delEvent);
-app.put("/ticket", updateTicket); //attendant
+app.put("/ticket", checkAuthAttendant, updateTicket); //attendant
 
 app.listen(3333);

@@ -9,13 +9,18 @@ function login(req, res) {
     (u) => u.username === username
   );
 
+  const cookieOptions = {
+    maxAge: 900000,
+    sameSite: "strict",
+  };
+
   if (user) {
     bcrypt.compare(password, userPassword, (err, result) => {
       if (result) {
-        const tokenId = `${new Date().getTime()}:${username}`;
-        const token = crypto.createHash("sha256").update(tokenId).digest("hex");
-        
-        res.cookie("token", token);
+        const token = `${new Date().getTime()}.${user.type}`;
+        // const token = crypto.createHash("sha256").update(tokenId).digest("hex");
+
+        res.cookie("token", token, cookieOptions);
         res.send({ token, ...user });
       } else {
         res.status(400);
