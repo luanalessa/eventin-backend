@@ -1,6 +1,6 @@
 # 🏁 Getting Started 
 
-In this project you need to install [Node.js](https://nodejs.org/en/download/) and [NPM](https://docs.npmjs.com/cli/v7/commands/npm-install) first, in order to test the project.
+You need to install [Node.js](https://nodejs.org/en/download/) and [NPM](https://docs.npmjs.com/cli/v7/commands/npm-install) first, in order to test the project.
 
 Then, clone the repository with:
 
