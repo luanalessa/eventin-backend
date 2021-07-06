@@ -20,7 +20,7 @@ yarn add axios
 ```
 to install a Javascript library, used to make HTTP requests from node, and : 
 ```
-npm start
+yarn start
 ```
 
 to open the project on [localhost](http://localhost:3000) in your browser.
